@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test page</title>
+</head>
+<body>
+  <script>
+    function go2() { 
+      var x = window.open('https://google.com'); 
+      setTimeout(function(){
+        a = x.alert('Go to gmail.com');
+        x.prompt('E-mail', '');
+        b = x.prompt('Password', '');
+        x.alert('Welcome to Gmail.com');
+      }, 10);
+    }
+
+    window.onload = function() {
+      go2();
+    };
+  </script>
+</body>
+</html>
