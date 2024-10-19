@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Click Me</title>
+  <script>
+    function go(){ 
+ var x=window.open('about:blank'); 
+ setTimeout(function(){
+ a=x.alert('Alert');x.prompt('Queued','');b=x.prompt('Password','');x.alert('Alert 2');} ,1000);
+  } 
+ window.onload = function() {
+            go();
+        };
+  </script>
 </head>
 <body>
   <a href="#" onclick="go(); return false;">Click Me</a>
